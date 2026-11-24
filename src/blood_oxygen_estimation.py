@@ -86,7 +86,7 @@ def check_activity():
     if samples_collected < BUFFER_SIZE:
         return STATE_WAITING
 
-    # STEP 1: Combine X, Y, Z into total movement ---
+    # STEP 1: Combines X, Y, Z into total movement ---
     # I remember inverse square in a quake 3 game, its so peak you should google it ; reciprocal of sq root of 32 bit fp number its so peak bro
     # (Used 3D vector magnitude sqrt(x^2 + y^2 + z^2) so it still works even if
     # the user tilts their wrist or rotates the sensor upside down)
